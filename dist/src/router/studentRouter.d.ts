@@ -1,2 +1,2 @@
-declare const productRouter: import("express-serve-static-core").Router;
-export default productRouter;
+declare const StudentRouter: import("express-serve-static-core").Router;
+export default StudentRouter;

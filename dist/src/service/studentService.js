@@ -34,7 +34,7 @@ class StudentService {
                 },
             });
         };
-        this.ASC = async () => {
+        this.AVG = async () => {
             let data = await this.repository.find({
                 relations: {
                     roomClass: true

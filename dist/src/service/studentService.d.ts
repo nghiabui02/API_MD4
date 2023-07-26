@@ -7,7 +7,7 @@ declare class StudentService {
     findById: (data: any) => Promise<StudentPro[]>;
     update: (id: any, data: any) => Promise<import("typeorm").UpdateResult>;
     findByName: (name: any) => Promise<StudentPro[]>;
-    ASC: () => Promise<StudentPro[]>;
+    AVG: () => Promise<StudentPro[]>;
     DESC: () => Promise<StudentPro[]>;
 }
 declare const _default: StudentService;

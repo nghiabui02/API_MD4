@@ -6,7 +6,7 @@ class StudentController {
     findAll = async (req: Request, res: Response) => {
         let data
         if(req.params.score === "ASC"){
-            data = await studentService.ASC();
+            data = await studentService.AVG();
         }else if(req.params.score === "DESC"){
             data =await  StudentService.DESC()
         } else {
@@ -37,8 +37,8 @@ class StudentController {
         let data = await StudentService.findByName(req.query.name);
         res.json(data)
     }
-    ASC = async (req: Request, res: Response) => {
-        let data = await StudentService.ASC();
+    AVG = async (req: Request, res: Response) => {
+        let data = await StudentService.AVG();
         res.json(data);
     }
 }

@@ -34,7 +34,7 @@ class StudentService{
             },
         })
     }
-    ASC = async () => {
+    AVG = async () => {
         let data  =await this.repository.find({
             relations:{
                 roomClass:true
